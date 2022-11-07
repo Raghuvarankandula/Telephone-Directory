@@ -55,7 +55,7 @@ print(data)
 myquery = { "address": "Highway 37" }
 
 
-#Delete
+# Delete
 mycol.delete_one(myquery)
 
 for x in mycol.find():
