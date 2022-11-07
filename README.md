@@ -36,7 +36,7 @@ x = mycol.insert_many(mydict)
 #print list of the _id values of the inserted documents:
 print(x.inserted_ids)
 
-#too print all the data (retrive)
+# to print all the data (retrive)
 
 for x in mycol.find():
   print(x)
@@ -54,8 +54,7 @@ data = mycol.find({"city":"Bombay"})
 print(data)
 myquery = { "address": "Highway 37" }
 
-
-#Delete
+# Delete
 mycol.delete_one(myquery)
 
 for x in mycol.find():
